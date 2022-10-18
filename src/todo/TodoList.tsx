@@ -151,15 +151,15 @@ function TodoList() {
           var monthChoose = chooseTime.getMonth();
           var yearChoose = chooseTime.getFullYear();
           if(yearChoose > yearNow){
-            todo.timeShow = yearChoose - yearNow + ' năm';
+            todo.timeShow = yearChoose - yearNow + ' year';
           }
           else {
             if(monthChoose > monthNow){
-              todo.timeShow = monthChoose - monthNow + ' tháng';
+              todo.timeShow = monthChoose - monthNow + ' month';
             }
             else {
               if(dateChoose > dateNow){
-                todo.timeShow = dateChoose - dateNow + ' ngày';
+                todo.timeShow = dateChoose - dateNow + ' day';
               }
               else if(dateChoose === dateNow){
                 todo.timeShow = 'today';
