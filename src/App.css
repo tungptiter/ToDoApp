@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+  background-image: url(./img/beach5.webp);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.App {
+  text-align: center;
+  font: normal normal 500 1rem Montserrat; 
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.name-branch {
+  color: red;
+}
+
+.card-todo {
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  left: 25%;
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 0.9;
+  min-height: 560px;
+  top: 50px;
+}
+
+h4 {
+  /* color: red; */
+  font: normal normal 500 1rem Montserrat; 
+}
+.formTodo {
+  font: normal normal 500 1rem Montserrat; 
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  width: 25%;
+  height: 25px;
+  border-radius: 5px;
+  border-width: thin;
+  font: normal normal 0.8rem Montserrat; 
+  
+  padding-left: 7px;
+}
+.filter {
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+.all-todo {
+  width: 4% !important;
+}
+
+.add-todo {
+  cursor: pointer;
+  height: 30px;
+  width: 8%;
+  background-color: #006cdb;
+  color: white;
+  border-color: white;
+  border-width: thin;
+  border-radius: 5px;
+  margin-left: 3px;
+  font: normal normal 0.8rem Montserrat; 
+}
+.add-todo:hover {
+  background-color: #0f5faf;
+}
+@media screen and (min-width: 1100px){
+  .update-input {
+    /* margin-left: 1.4375rem; */
+  }
+  .update-todo {
+    width: 8% !important;
+    /* color: rgb(43, 153, 226); */
+  }
+}
+@media screen and (min-width: 1600px){
+  .update-input {
+    margin-left: 1.4375rem;
+    /* margin-left: 0px; */
+  }
+  .update-todo {
+    width: 10% !important;
+    /* color: red; */
+  }
+}
+/* @media screen and (min-width > 900px) and ( min-width < 1000px){ */
+@media screen and (min-width: 1050px) and ( min-width < 1000px){ */
+  .update-input {
+    margin-left: 1.4375rem;
+    /* margin-left: 0px; */
+  }
+  .update-todo {
+    width: 9.5% !important;
+    /* color: rgb(9, 255, 0); */
+  }
+}
+@media screen and (max-width: 950px){
+  .update-input {
+    margin-left: 0px;
+  }
+  .add-todo {
+    width: 14% !important;
+    /* color: rgb(255, 0, 251); */
+    
+  }
+}
+@media screen and (max-width: 500px){
+  .update-input {
+    margin-left: 0px;
+  }
+  .add-todo {
+    width: 25% !important;
+    color: rgb(0, 255, 242);
+    
+  }
+}
+
+.complete {
+  background-color: #67C23A;
+}
+
+.todo-row {
+  border-radius: 5px;
+  background-color: #409EFF;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 34%;
+  min-height: 30px;
+  margin: 10px;
+  margin-left: 33%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.textTodo {
+  float: left;
+  padding-left: 5%;
+  word-break: break-all;
+  margin-right: 5.5rem;
+  cursor: pointer;
+}
+.datee {
+  width: 70px;
+  margin-right: 10px;
+  margin-left: 13px;
+}
+
+.icons {
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  display: flex;
+  align-content: center;
+  color: white;
+}
+
+.icon-delete, .icon-done {
+  margin-left: 5px;
+}
+.icon-delete {
+  color: red;
+  font-size: 21px;
+}
+.icon-done {
+  color: green;
+}
+.icon-done:hover, .icon-delete:hover, .icon-edit:hover {
+  cursor: pointer;
+  font-size: 25px;
+}
+.filter-todo {
+  background-color: white;
+  border: none;
+  position: relative;
+  margin-left: 60%;
+  display: flex;
+  cursor: auto;
+  width: fit-content;
+  outline: none;
+
+}
+.icon-complete, .icon-unComplete {
+  font-size: 28px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+}
+.icon-complete {
+  color: green;
+}
+ .icon-unComplete {
+  color: orange;
+}
+.icon-complete:hover {
+  color: rgb(0, 187, 0);
+}
+ .icon-unComplete:hover {
+  color: rgb(255, 182, 47);
+}
+.icon-complete:hover, .icon-unComplete:hover {
+  font-size: 29px;
+}
+
+.input-search {
+  position: absolute;
+  left: 0;
+  margin-left: 33%;
+}
+
+.icon-unComplete {
+  margin-left: 1.3rem;
+}
+
+.show-counter {
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+  display: -webkit-inline-box;
+  color: #485460;
+}
+/* .text-unComplete {
+  color:#006cdb;
+}
+.text-complete {
+  color: #8bc3fd;
+} */
+.button-date {
+  width: 5%;
+  cursor: pointer;
+  height: 30px;
+  background-color: #006cdb;
+  color: white;
+  border-color: white;
+  border-width: thin;
+  border-radius: 5px;
+  margin-left: 3px;
+  font: normal normal 0.8rem Montserrat; 
+}
+.rdtPicker {
+  margin-left: 650px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 14%;
+  background-color: #409EFF;
+  border-radius: 5%;
+
+  position: absolute;
+  z-index: 1;
+  right: 40%;
+  background: white;
+}
+.form-control {
+  width: 25.5%;
+  height: 25px;
+  border-radius: 5px;
+  border-width: thin;
+  font: normal normal 0.8rem Montserrat;
+  margin-left: -120px;
+  margin-top: 10px;
+  padding-left: 7px;
+}
+.todo-date {
+  position: relative;
+}
